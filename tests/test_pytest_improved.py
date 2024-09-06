@@ -1,4 +1,7 @@
 import pytest
+file_to_be_tested = "a2_BMI_solution.py"
+
+
 
 def run_script_with_input(inputs, monkeypatch):
     # Mock input with monkeypatch
@@ -6,8 +9,8 @@ def run_script_with_input(inputs, monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: next(input_iter))
 
     # Run the script
-    with open('a2_BMI.py') as f:
-        code = compile(f.read(), 'a2_BMI.py', 'exec')
+    with open(file_to_be_tested) as f:
+        code = compile(f.read(), file_to_be_tested, 'exec')
         exec(code)
 
 def test_correct_output_message(monkeypatch, capsys):
