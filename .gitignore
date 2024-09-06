@@ -1,2 +1,4 @@
 a2_BMI_solution.py
 *.xlsx
+tests/__pycache__/
+.vscode/
