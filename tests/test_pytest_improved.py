@@ -1,23 +1,45 @@
 import pytest
 
 
-# Test to verify correct prompts for user inputs
-def test_correct_output_message(run_script):
-    user_inputs = ['Amit', 'Patel', '6', '7', '140']  # Use this manually since it's specific to this test
-    output = run_script(user_inputs)
+# Override the built-in input to capture prompts
+def mock_input(expected_prompts, inputs):
+    """ Helper function to mock input and capture prompts """
+    input_iter = iter(inputs)
+    prompt_iter = iter(expected_prompts)
 
-    assert output[0] == "please enter your first name: "
-    assert output[1] == "please enter your last name: "
-    assert output[2] == "enter your height in feet: "
-    assert output[3] == "please enter height in inches: "
-    assert output[4] == "please enter weight in lbs: "
+    def mocked_input(prompt):
+        expected_prompt = next(prompt_iter)  # Store the next expected prompt
+        assert prompt == expected_prompt, f"Expected: {expected_prompt}, but got: {prompt}"
+        return next(input_iter)  # Return the next user input
+    
+    return mocked_input
+
+# Test to verify correct prompts for user inputs
+def test_correct_output_message(monkeypatch, run_script):
+    # Expected input prompts
+    expected_prompts = [
+        "please enter your first name: ",
+        "please enter your last name: ",
+        "enter your height in feet: ",
+        "please enter height in inches: ",
+        "please enter weight in lbs: "
+    ]
+    
+    # Mock inputs that would be provided by the user
+    user_inputs = ['Amit', 'Patel', '6', '7', '140']
+
+    # Patch the built-in input function with mock_input
+    monkeypatch.setattr('builtins.input', mock_input(expected_prompts, user_inputs))
+
+    # Run the script using the run_script fixture (it doesn't return output here)
+    run_script()
 
 
 # Parametrized test for BMI calculations
 @pytest.mark.parametrize("user_inputs, expected_name, expected_bmi", [
-    pytest.lazy_fixture('user_data')[0][:3],  # Amit Patel
-    pytest.lazy_fixture('user_data')[1][:3],  # John Doe
-    pytest.lazy_fixture('user_data')[2][:3],  # Jane Doe
+    (['Amit', 'Patel', '6', '7', '140'], "Amit Patel", "15.77"),  # Amit Patel
+    (['John', 'Doe', '5', '10', '200'], "John Doe", "28.69"),    # John Doe
+    (['Jane', 'Doe', '5', '5', '150'], "Jane Doe", "24.96"),     # Jane Doe
 ])
 def test_bmi_calculation(run_script, user_inputs, expected_name, expected_bmi):
     output = run_script(user_inputs)
@@ -26,8 +48,8 @@ def test_bmi_calculation(run_script, user_inputs, expected_name, expected_bmi):
 
 # Parametrized test for BMI categories
 @pytest.mark.parametrize("user_inputs, expected_category", [
-    (pytest.lazy_fixture('user_data')[0][0], "Underweight"),    # Amit Patel
-    (pytest.lazy_fixture('user_data')[2][0], "Normal weight"),  # Jane Doe
+    (['Amit', 'Patel', '6', '7', '140'], "Underweight"),    # Amit Patel
+    (['Jane', 'Doe', '5', '5', '150'], "Normal weight"),    # Jane Doe
 ])
 def test_bmi_category(run_script, user_inputs, expected_category):
     output = run_script(user_inputs)
