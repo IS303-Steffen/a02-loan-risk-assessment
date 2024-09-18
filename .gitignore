@@ -1,4 +1,7 @@
-a2_BMI_solution.py
+a3_solution_BMI.py
 *.xlsx
 tests/__pycache__/
 .vscode/
+tests/.pytest_cache/
+.pytest_cache/
+__pycache__/
