@@ -44,7 +44,7 @@ Amit Patel has a BMI of 15.77. The associated category is: Underweight.
 ```
 
 ## Rubric
-This assignment contains 4 automated tests. The tests will ignore spacing, capitalization, and punctuation, but you will fail the tests if you spell something wrong or calculate something incorrectly.
+This assignment contains the automated tests listed below. The tests will ignore spacing, capitalization, and punctuation, but you will fail the tests if you spell something wrong or calculate something incorrectly.
 <table>
 <thead>
     <tr>
