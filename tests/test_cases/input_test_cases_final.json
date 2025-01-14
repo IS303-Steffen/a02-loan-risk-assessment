@@ -1,0 +1,227 @@
+[
+    {
+        "id_input_test_case": 1,
+        "input_test_case_description": "Example of obese",
+        "inputs": [
+            "Amit",
+            "Patel",
+            "6",
+            "2",
+            "350"
+        ],
+        "input_prompts": [
+            "Enter your first name: ",
+            "Enter your last name: ",
+            "Enter the feet of your height: ",
+            "Enter the inches of your height: ",
+            "Enter your weight in pounds: "
+        ],
+        "printed_messages": [
+            "Amit Patel has a BMI of 44.93. The associated category is: Obese."
+        ],
+        "invalid_input_prompts": [],
+        "invalid_printed_messages": [
+            "Kim Gordon has a BMI of 23.29. The associated category is: Normal weight.",
+            "Steve Shelley has a BMI of 26.58. The associated category is: Overweight.",
+            "Thurston Moore has a BMI of 25.00. The associated category is: Overweight.",
+            "Lee Ranaldo has a BMI of 15.78. The associated category is: Underweight."
+        ],
+        "bools": {},
+        "ints": {
+            "height_feet": 6,
+            "height_inches": 2
+        },
+        "strings": {
+            "first_name": "Amit",
+            "last_name": "Patel",
+            "category": "Obese"
+        },
+        "floats": {
+            "weight_pounds": 350.0,
+            "bmi": 44.932432432432435
+        },
+        "lists": {},
+        "dicts": {},
+        "example_output": "Enter your first name: Amit\nEnter your last name: Patel\nEnter the feet of your height: 6\nEnter the inches of your height: 2\nEnter your weight in pounds: 350\nAmit Patel has a BMI of 44.93. The associated category is: Obese."
+    },
+    {
+        "id_input_test_case": 2,
+        "input_test_case_description": "Example of overweight, right at the category threshold. Also includes a decimal for the weight.",
+        "inputs": [
+            "Thurston",
+            "Moore",
+            "5",
+            "8",
+            "164.44"
+        ],
+        "input_prompts": [
+            "Enter your first name: ",
+            "Enter your last name: ",
+            "Enter the feet of your height: ",
+            "Enter the inches of your height: ",
+            "Enter your weight in pounds: "
+        ],
+        "printed_messages": [
+            "Thurston Moore has a BMI of 25.00. The associated category is: Overweight."
+        ],
+        "invalid_input_prompts": [],
+        "invalid_printed_messages": [
+            "Kim Gordon has a BMI of 23.29. The associated category is: Normal weight.",
+            "Amit Patel has a BMI of 44.93. The associated category is: Obese.",
+            "Steve Shelley has a BMI of 26.58. The associated category is: Overweight.",
+            "Lee Ranaldo has a BMI of 15.78. The associated category is: Underweight."
+        ],
+        "bools": {},
+        "ints": {
+            "height_feet": 5,
+            "height_inches": 8
+        },
+        "strings": {
+            "first_name": "Thurston",
+            "last_name": "Moore",
+            "category": "Overweight"
+        },
+        "floats": {
+            "weight_pounds": 164.44,
+            "bmi": 25.000285467128027
+        },
+        "lists": {},
+        "dicts": {},
+        "example_output": "Enter your first name: Thurston\nEnter your last name: Moore\nEnter the feet of your height: 5\nEnter the inches of your height: 8\nEnter your weight in pounds: 164.44\nThurston Moore has a BMI of 25.00. The associated category is: Overweight."
+    },
+    {
+        "id_input_test_case": 3,
+        "input_test_case_description": "Example of overweight",
+        "inputs": [
+            "Steve",
+            "Shelley",
+            "5",
+            "9",
+            "180"
+        ],
+        "input_prompts": [
+            "Enter your first name: ",
+            "Enter your last name: ",
+            "Enter the feet of your height: ",
+            "Enter the inches of your height: ",
+            "Enter your weight in pounds: "
+        ],
+        "printed_messages": [
+            "Steve Shelley has a BMI of 26.58. The associated category is: Overweight."
+        ],
+        "invalid_input_prompts": [],
+        "invalid_printed_messages": [
+            "Kim Gordon has a BMI of 23.29. The associated category is: Normal weight.",
+            "Amit Patel has a BMI of 44.93. The associated category is: Obese.",
+            "Thurston Moore has a BMI of 25.00. The associated category is: Overweight.",
+            "Lee Ranaldo has a BMI of 15.78. The associated category is: Underweight."
+        ],
+        "bools": {},
+        "ints": {
+            "height_feet": 5,
+            "height_inches": 9
+        },
+        "strings": {
+            "first_name": "Steve",
+            "last_name": "Shelley",
+            "category": "Overweight"
+        },
+        "floats": {
+            "weight_pounds": 180.0,
+            "bmi": 26.578449905482042
+        },
+        "lists": {},
+        "dicts": {},
+        "example_output": "Enter your first name: Steve\nEnter your last name: Shelley\nEnter the feet of your height: 5\nEnter the inches of your height: 9\nEnter your weight in pounds: 180\nSteve Shelley has a BMI of 26.58. The associated category is: Overweight."
+    },
+    {
+        "id_input_test_case": 4,
+        "input_test_case_description": "Example of normal weight",
+        "inputs": [
+            "Kim",
+            "Gordon",
+            "5",
+            "5",
+            "140"
+        ],
+        "input_prompts": [
+            "Enter your first name: ",
+            "Enter your last name: ",
+            "Enter the feet of your height: ",
+            "Enter the inches of your height: ",
+            "Enter your weight in pounds: "
+        ],
+        "printed_messages": [
+            "Kim Gordon has a BMI of 23.29. The associated category is: Normal weight."
+        ],
+        "invalid_input_prompts": [],
+        "invalid_printed_messages": [
+            "Amit Patel has a BMI of 44.93. The associated category is: Obese.",
+            "Steve Shelley has a BMI of 26.58. The associated category is: Overweight.",
+            "Thurston Moore has a BMI of 25.00. The associated category is: Overweight.",
+            "Lee Ranaldo has a BMI of 15.78. The associated category is: Underweight."
+        ],
+        "bools": {},
+        "ints": {
+            "height_feet": 5,
+            "height_inches": 5
+        },
+        "strings": {
+            "first_name": "Kim",
+            "last_name": "Gordon",
+            "category": "Normal weight"
+        },
+        "floats": {
+            "weight_pounds": 140.0,
+            "bmi": 23.294674556213018
+        },
+        "lists": {},
+        "dicts": {},
+        "example_output": "Enter your first name: Kim\nEnter your last name: Gordon\nEnter the feet of your height: 5\nEnter the inches of your height: 5\nEnter your weight in pounds: 140\nKim Gordon has a BMI of 23.29. The associated category is: Normal weight."
+    },
+    {
+        "id_input_test_case": 5,
+        "input_test_case_description": "Example of underweight",
+        "inputs": [
+            "Lee",
+            "Ranaldo",
+            "5",
+            "10",
+            "110"
+        ],
+        "input_prompts": [
+            "Enter your first name: ",
+            "Enter your last name: ",
+            "Enter the feet of your height: ",
+            "Enter the inches of your height: ",
+            "Enter your weight in pounds: "
+        ],
+        "printed_messages": [
+            "Lee Ranaldo has a BMI of 15.78. The associated category is: Underweight."
+        ],
+        "invalid_input_prompts": [],
+        "invalid_printed_messages": [
+            "Kim Gordon has a BMI of 23.29. The associated category is: Normal weight.",
+            "Amit Patel has a BMI of 44.93. The associated category is: Obese.",
+            "Steve Shelley has a BMI of 26.58. The associated category is: Overweight.",
+            "Thurston Moore has a BMI of 25.00. The associated category is: Overweight."
+        ],
+        "bools": {},
+        "ints": {
+            "height_feet": 5,
+            "height_inches": 10
+        },
+        "strings": {
+            "first_name": "Lee",
+            "last_name": "Ranaldo",
+            "category": "Underweight"
+        },
+        "floats": {
+            "weight_pounds": 110.0,
+            "bmi": 15.781632653061223
+        },
+        "lists": {},
+        "dicts": {},
+        "example_output": "Enter your first name: Lee\nEnter your last name: Ranaldo\nEnter the feet of your height: 5\nEnter the inches of your height: 10\nEnter your weight in pounds: 110\nLee Ranaldo has a BMI of 15.78. The associated category is: Underweight."
+    }
+]
