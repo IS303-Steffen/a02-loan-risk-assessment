@@ -31,6 +31,7 @@ def detect_module(solution_module, student_module):
 #default_module_to_test = "a6_function_smorgasbord"#detect_module(solution_module, student_module)
 default_module_to_test = detect_module(solution_module, student_module)
 
+
 # default per-test-case timeout amount in seconds:
 default_timeout_seconds = 7
 
@@ -44,7 +45,7 @@ raised_exceptions = []
 # Path to the directory containing this file
 CURRENT_DIR = os.path.dirname(__file__)
 
-expected_database_name = r"movies.db"
+expected_database_name = None
 
 # ========
 # FIXTURES
@@ -870,7 +871,7 @@ def format_error_message(custom_message: str = None,
     
     # some starting strings. All messages will be appended to error_message
     error_message = ''
-    divider = f"\n{"-"*line_length}\n"
+    divider = f"\n{'-'*line_length}\n"
     error_message += divider
     error_message += f"IS 303 STUDENTS: READ THE ERROR MESSAGES BELOW\n\n"
     error_message += "↓"*line_length + "\n"
@@ -884,7 +885,7 @@ def format_error_message(custom_message: str = None,
             f"\nINPUT TEST CASE DESCRIPTION: \"{input_test_case['input_test_case_description']}\"\n"
             f"\nFirst, read the error below. You can also see details for this test case in the 'descriptions_of_test_cases' folder in this repository.\n\n"
         ), line_length)
-        test_case_description = f"FOR INPUT TEST CASE: {input_test_case["id_input_test_case"]}"
+        test_case_description = f"FOR INPUT TEST CASE: {input_test_case['id_input_test_case']}"
     else:
         test_case_description = ''
 
@@ -1047,7 +1048,7 @@ def timeout_message_for_students(input_test_case, current_test_name):
                                 f"HOW TO FIX IT:\n"
                                 f"--------------\n"
                                 f"You got a Timeout Error, meaning this Input Test Case didn't complete after {default_timeout_seconds} seconds. "
-                                f"The test timed out during Input Test Case {input_test_case["id_input_test_case"]}. To try and identify the problem, run your code like normal, but enter these EXACT inputs "
+                                f"The test timed out during Input Test Case {input_test_case['id_input_test_case']}. To try and identify the problem, run your code like normal, but enter these EXACT inputs "
                                 f"in this order (without the quotes):\n\n"
                                 f"{test_case_inputs}\n\n"
                                 f"Most likely, "
