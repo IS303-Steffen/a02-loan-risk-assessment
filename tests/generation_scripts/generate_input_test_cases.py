@@ -14,7 +14,7 @@ import sys
 from datetime import date, datetime
 
 # Name of the file that will be run to generate the test cases from:
-solution_file_to_run = "a03_solution_BMI.py"
+solution_file_to_run = "a02_solution_loan_risk_assessment.py"
 # Name of the JSON file that is created after running the script:
 json_export_filename = r'input_test_cases_draft.json'
 

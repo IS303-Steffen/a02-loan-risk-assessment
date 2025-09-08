@@ -16,31 +16,31 @@ The tests will ignore spacing, capitalization, and punctuation, but you will fai
     <tr style="text-align: left">
         <td>1. Input Prompts</td>
         <td>
-        <b>Input test cases used:</b> 1-5<br><br>
+        <b>Input test cases used:</b> 1-7<br><br>
         Your input prompts must be the same as the expected input prompts of each input test case. 
         <br>
         <br>
-        See the <code>descriptions_ot_test_cases</code> folder for expected input prompts for each input test case.
+        See the <code>descriptions_of_test_cases</code> folder for expected input prompts for each input test case.
         </td>  
         </td>
-        <td>20</td>
+        <td>30</td>
     </tr>
     <tr style="text-align: left">
         <td>2. Printed Messages</td>
         <td>
-        <b>Input test cases used:</b> 1-5<br><br>
+        <b>Input test cases used:</b> 1-7<br><br>
         Your printed output must be the same as the expected output of each input test case. This includes the correct BMI calculations and BMI categories.
         <br>
         <br>
-        See the <code>descriptions_ot_test_cases</code> folder for expected printed messages for each input test case.       
+        See the <code>descriptions_of_test_cases</code> folder for expected printed messages for each input test case.       
         </td>
-        <td>70</td>
+        <td>60</td>
     </tr>
     <tr style="text-align: left">
         <td>3. Sufficient Comments </td>
         <td>
         <b>Input test cases used:</b> None<br><br>
-        Your code must include at least <code>10</code> comments. You can use any form of commenting:
+        Your code must include at least <code>5</code> comments. You can use any form of commenting:
         <ul>
           <li><code>#</code></li> 
           <li><code>''' '''</code></li>
@@ -65,22 +65,30 @@ If you fail a test during a specific test case, see the `descriptions_of_test_ca
   </tr>
   <tr>
     <td>Input Test Case 01</td>
-    <td>Example of obese</td>
+    <td>Low risk example</td>
   </tr>
   <tr>
     <td>Input Test Case 02</td>
-    <td>Example of overweight, right at the category threshold. Also includes a decimal for the weight.</td>
+    <td>Moderate Risk, right at the boundary</td>
   </tr>
   <tr>
     <td>Input Test Case 03</td>
-    <td>Example of overweight</td>
+    <td>Moderate risk</td>
   </tr>
   <tr>
     <td>Input Test Case 04</td>
-    <td>Example of normal weight</td>
+    <td>Elevated Risk right at the boundary</td>
   </tr>
   <tr>
     <td>Input Test Case 05</td>
-    <td>Example of underweight</td>
+    <td>Elevated Risk</td>
+  </tr>
+  <tr>
+    <td>Input Test Case 06</td>
+    <td>High Risk at the boundary</td>
+  </tr>
+  <tr>
+    <td>Input Test Case 07</td>
+    <td>Clear high</td>
   </tr>
 </table>

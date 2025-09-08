@@ -1,37 +1,23 @@
 # Test Case 3
 
 ## Description
-Example of overweight
+Moderate risk
 
 ## Inputs
+The inputs below (without the quotes) will be entered one by one each time an `input()` function is found in your code.
 ```
-1: "Steve"
-2: "Shelley"
-3: "5"
-4: "9"
-5: "180"
-```
-
-## Expected Input Prompts
-```
-1: "Enter your first name: "
-2: "Enter your last name: "
-3: "Enter the feet of your height: "
-4: "Enter the inches of your height: "
-5: "Enter your weight in pounds: "
+1: "Chloe"
+2: "Singh"
+3: "72000"
+4: "2100"
 ```
 
-## Expected Printed Messages
+## Example Output
+This is what your terminal should look like if you use the inputs above when running your code.
 ```
-1: "Steve Shelley has a BMI of 26.58. The associated category is: Overweight."
-```
-
-## Example Output **(combined Inputs, Input Prompts, and Printed Messages)**
-```
-Enter your first name: Steve
-Enter your last name: Shelley
-Enter the feet of your height: 5
-Enter the inches of your height: 9
-Enter your weight in pounds: 180
-Steve Shelley has a BMI of 26.58. The associated category is: Overweight.
+Enter your first name: Chloe
+Enter your last name: Singh
+Enter your annual income in dollars: 72000
+Enter your total monthly debt payments in dollars: 2100
+Chloe Singh has a DTI of 0.35. The associated category is: Moderate Risk.
 ```

@@ -1,37 +1,23 @@
 # Test Case 5
 
 ## Description
-Example of underweight
+Elevated Risk
 
 ## Inputs
+The inputs below (without the quotes) will be entered one by one each time an `input()` function is found in your code.
 ```
-1: "Lee"
-2: "Ranaldo"
-3: "5"
-4: "10"
-5: "110"
-```
-
-## Expected Input Prompts
-```
-1: "Enter your first name: "
-2: "Enter your last name: "
-3: "Enter the feet of your height: "
-4: "Enter the inches of your height: "
-5: "Enter your weight in pounds: "
+1: "Ella"
+2: "Brooks"
+3: "90000"
+4: "3000"
 ```
 
-## Expected Printed Messages
+## Example Output
+This is what your terminal should look like if you use the inputs above when running your code.
 ```
-1: "Lee Ranaldo has a BMI of 15.78. The associated category is: Underweight."
-```
-
-## Example Output **(combined Inputs, Input Prompts, and Printed Messages)**
-```
-Enter your first name: Lee
-Enter your last name: Ranaldo
-Enter the feet of your height: 5
-Enter the inches of your height: 10
-Enter your weight in pounds: 110
-Lee Ranaldo has a BMI of 15.78. The associated category is: Underweight.
+Enter your first name: Ella
+Enter your last name: Brooks
+Enter your annual income in dollars: 90000
+Enter your total monthly debt payments in dollars: 3000
+Ella Brooks has a DTI of 0.40. The associated category is: Elevated Risk.
 ```

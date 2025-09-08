@@ -1,227 +1,310 @@
 [
     {
         "id_input_test_case": 1,
-        "input_test_case_description": "Example of obese",
+        "input_test_case_description": "Low risk example",
         "inputs": [
-            "Amit",
-            "Patel",
-            "6",
-            "2",
-            "350"
+            "Taylor",
+            "Nguyen",
+            "60000",
+            "900"
         ],
         "input_prompts": [
             "Enter your first name: ",
             "Enter your last name: ",
-            "Enter the feet of your height: ",
-            "Enter the inches of your height: ",
-            "Enter your weight in pounds: "
+            "Enter your annual income in dollars: ",
+            "Enter your total monthly debt payments in dollars: "
         ],
         "printed_messages": [
-            "Amit Patel has a BMI of 44.93. The associated category is: Obese."
+            "Taylor Nguyen has a DTI of 0.18. The associated category is: Low Risk."
         ],
         "invalid_input_prompts": [],
         "invalid_printed_messages": [
-            "Kim Gordon has a BMI of 23.29. The associated category is: Normal weight.",
-            "Steve Shelley has a BMI of 26.58. The associated category is: Overweight.",
-            "Thurston Moore has a BMI of 25.00. The associated category is: Overweight.",
-            "Lee Ranaldo has a BMI of 15.78. The associated category is: Underweight."
+            "Grace Patel has a DTI of 0.67. The associated category is: High Risk.",
+            "Felix Chen has a DTI of 0.50. The associated category is: High Risk.",
+            "Chloe Singh has a DTI of 0.35. The associated category is: Moderate Risk.",
+            "Ella Brooks has a DTI of 0.40. The associated category is: Elevated Risk.",
+            "Ava Lee has a DTI of 0.20. The associated category is: Moderate Risk.",
+            "Diego Park has a DTI of 0.36. The associated category is: Elevated Risk."
         ],
         "bools": {},
-        "ints": {
-            "height_feet": 6,
-            "height_inches": 2
-        },
+        "ints": {},
         "strings": {
-            "first_name": "Amit",
-            "last_name": "Patel",
-            "category": "Obese"
+            "first_name": "Taylor",
+            "last_name": "Nguyen",
+            "category": "Low Risk"
         },
         "floats": {
-            "weight_pounds": 350.0,
-            "bmi": 44.932432432432435
+            "annual_income": 60000.0,
+            "monthly_debt": 900.0,
+            "raw_dti": 0.18,
+            "dti": 0.18
         },
         "lists": {},
         "dicts": {},
-        "example_output": "Enter your first name: Amit\nEnter your last name: Patel\nEnter the feet of your height: 6\nEnter the inches of your height: 2\nEnter your weight in pounds: 350\nAmit Patel has a BMI of 44.93. The associated category is: Obese."
+        "example_output": "Enter your first name: Taylor\nEnter your last name: Nguyen\nEnter your annual income in dollars: 60000\nEnter your total monthly debt payments in dollars: 900\nTaylor Nguyen has a DTI of 0.18. The associated category is: Low Risk."
     },
     {
         "id_input_test_case": 2,
-        "input_test_case_description": "Example of overweight, right at the threshold",
+        "input_test_case_description": "Moderate Risk, right at the boundary",
         "inputs": [
-            "Thurston",
-            "Moore",
-            "5",
-            "8",
-            "164.44"
+            "Ava",
+            "Lee",
+            "60000",
+            "1000"
         ],
         "input_prompts": [
             "Enter your first name: ",
             "Enter your last name: ",
-            "Enter the feet of your height: ",
-            "Enter the inches of your height: ",
-            "Enter your weight in pounds: "
+            "Enter your annual income in dollars: ",
+            "Enter your total monthly debt payments in dollars: "
         ],
         "printed_messages": [
-            "Thurston Moore has a BMI of 25.00. The associated category is: Overweight."
+            "Ava Lee has a DTI of 0.20. The associated category is: Moderate Risk."
         ],
         "invalid_input_prompts": [],
         "invalid_printed_messages": [
-            "Kim Gordon has a BMI of 23.29. The associated category is: Normal weight.",
-            "Amit Patel has a BMI of 44.93. The associated category is: Obese.",
-            "Steve Shelley has a BMI of 26.58. The associated category is: Overweight.",
-            "Lee Ranaldo has a BMI of 15.78. The associated category is: Underweight."
+            "Grace Patel has a DTI of 0.67. The associated category is: High Risk.",
+            "Felix Chen has a DTI of 0.50. The associated category is: High Risk.",
+            "Taylor Nguyen has a DTI of 0.18. The associated category is: Low Risk.",
+            "Chloe Singh has a DTI of 0.35. The associated category is: Moderate Risk.",
+            "Ella Brooks has a DTI of 0.40. The associated category is: Elevated Risk.",
+            "Diego Park has a DTI of 0.36. The associated category is: Elevated Risk."
         ],
         "bools": {},
-        "ints": {
-            "height_feet": 5,
-            "height_inches": 8
-        },
+        "ints": {},
         "strings": {
-            "first_name": "Thurston",
-            "last_name": "Moore",
-            "category": "Overweight"
+            "first_name": "Ava",
+            "last_name": "Lee",
+            "category": "Moderate Risk"
         },
         "floats": {
-            "weight_pounds": 164.44,
-            "bmi": 25.000285467128027
+            "annual_income": 60000.0,
+            "monthly_debt": 1000.0,
+            "raw_dti": 0.2,
+            "dti": 0.2
         },
         "lists": {},
         "dicts": {},
-        "example_output": "Enter your first name: Thurston\nEnter your last name: Moore\nEnter the feet of your height: 5\nEnter the inches of your height: 8\nEnter your weight in pounds: 164.44\nThurston Moore has a BMI of 25.00. The associated category is: Overweight."
+        "example_output": "Enter your first name: Ava\nEnter your last name: Lee\nEnter your annual income in dollars: 60000\nEnter your total monthly debt payments in dollars: 1000\nAva Lee has a DTI of 0.20. The associated category is: Moderate Risk."
     },
     {
         "id_input_test_case": 3,
-        "input_test_case_description": "Example of overweight",
+        "input_test_case_description": "Moderate risk",
         "inputs": [
-            "Steve",
-            "Shelley",
-            "5",
-            "9",
-            "180"
+            "Chloe",
+            "Singh",
+            "72000",
+            "2100"
         ],
         "input_prompts": [
             "Enter your first name: ",
             "Enter your last name: ",
-            "Enter the feet of your height: ",
-            "Enter the inches of your height: ",
-            "Enter your weight in pounds: "
+            "Enter your annual income in dollars: ",
+            "Enter your total monthly debt payments in dollars: "
         ],
         "printed_messages": [
-            "Steve Shelley has a BMI of 26.58. The associated category is: Overweight."
+            "Chloe Singh has a DTI of 0.35. The associated category is: Moderate Risk."
         ],
         "invalid_input_prompts": [],
         "invalid_printed_messages": [
-            "Kim Gordon has a BMI of 23.29. The associated category is: Normal weight.",
-            "Amit Patel has a BMI of 44.93. The associated category is: Obese.",
-            "Thurston Moore has a BMI of 25.00. The associated category is: Overweight.",
-            "Lee Ranaldo has a BMI of 15.78. The associated category is: Underweight."
+            "Grace Patel has a DTI of 0.67. The associated category is: High Risk.",
+            "Felix Chen has a DTI of 0.50. The associated category is: High Risk.",
+            "Taylor Nguyen has a DTI of 0.18. The associated category is: Low Risk.",
+            "Ella Brooks has a DTI of 0.40. The associated category is: Elevated Risk.",
+            "Ava Lee has a DTI of 0.20. The associated category is: Moderate Risk.",
+            "Diego Park has a DTI of 0.36. The associated category is: Elevated Risk."
         ],
         "bools": {},
-        "ints": {
-            "height_feet": 5,
-            "height_inches": 9
-        },
+        "ints": {},
         "strings": {
-            "first_name": "Steve",
-            "last_name": "Shelley",
-            "category": "Overweight"
+            "first_name": "Chloe",
+            "last_name": "Singh",
+            "category": "Moderate Risk"
         },
         "floats": {
-            "weight_pounds": 180.0,
-            "bmi": 26.578449905482042
+            "annual_income": 72000.0,
+            "monthly_debt": 2100.0,
+            "raw_dti": 0.35,
+            "dti": 0.35
         },
         "lists": {},
         "dicts": {},
-        "example_output": "Enter your first name: Steve\nEnter your last name: Shelley\nEnter the feet of your height: 5\nEnter the inches of your height: 9\nEnter your weight in pounds: 180\nSteve Shelley has a BMI of 26.58. The associated category is: Overweight."
+        "example_output": "Enter your first name: Chloe\nEnter your last name: Singh\nEnter your annual income in dollars: 72000\nEnter your total monthly debt payments in dollars: 2100\nChloe Singh has a DTI of 0.35. The associated category is: Moderate Risk."
     },
     {
         "id_input_test_case": 4,
-        "input_test_case_description": "Example of normal weight",
+        "input_test_case_description": "Elevated Risk right at the boundary",
         "inputs": [
-            "Kim",
-            "Gordon",
-            "5",
-            "5",
-            "140"
+            "Diego",
+            "Park",
+            "50000",
+            "1500"
         ],
         "input_prompts": [
             "Enter your first name: ",
             "Enter your last name: ",
-            "Enter the feet of your height: ",
-            "Enter the inches of your height: ",
-            "Enter your weight in pounds: "
+            "Enter your annual income in dollars: ",
+            "Enter your total monthly debt payments in dollars: "
         ],
         "printed_messages": [
-            "Kim Gordon has a BMI of 23.29. The associated category is: Normal weight."
+            "Diego Park has a DTI of 0.36. The associated category is: Elevated Risk."
         ],
         "invalid_input_prompts": [],
         "invalid_printed_messages": [
-            "Amit Patel has a BMI of 44.93. The associated category is: Obese.",
-            "Steve Shelley has a BMI of 26.58. The associated category is: Overweight.",
-            "Thurston Moore has a BMI of 25.00. The associated category is: Overweight.",
-            "Lee Ranaldo has a BMI of 15.78. The associated category is: Underweight."
+            "Grace Patel has a DTI of 0.67. The associated category is: High Risk.",
+            "Felix Chen has a DTI of 0.50. The associated category is: High Risk.",
+            "Taylor Nguyen has a DTI of 0.18. The associated category is: Low Risk.",
+            "Chloe Singh has a DTI of 0.35. The associated category is: Moderate Risk.",
+            "Ella Brooks has a DTI of 0.40. The associated category is: Elevated Risk.",
+            "Ava Lee has a DTI of 0.20. The associated category is: Moderate Risk."
         ],
         "bools": {},
-        "ints": {
-            "height_feet": 5,
-            "height_inches": 5
-        },
+        "ints": {},
         "strings": {
-            "first_name": "Kim",
-            "last_name": "Gordon",
-            "category": "Normal weight"
+            "first_name": "Diego",
+            "last_name": "Park",
+            "category": "Elevated Risk"
         },
         "floats": {
-            "weight_pounds": 140.0,
-            "bmi": 23.294674556213018
+            "annual_income": 50000.0,
+            "monthly_debt": 1500.0,
+            "raw_dti": 0.36,
+            "dti": 0.36
         },
         "lists": {},
         "dicts": {},
-        "example_output": "Enter your first name: Kim\nEnter your last name: Gordon\nEnter the feet of your height: 5\nEnter the inches of your height: 5\nEnter your weight in pounds: 140\nKim Gordon has a BMI of 23.29. The associated category is: Normal weight."
+        "example_output": "Enter your first name: Diego\nEnter your last name: Park\nEnter your annual income in dollars: 50000\nEnter your total monthly debt payments in dollars: 1500\nDiego Park has a DTI of 0.36. The associated category is: Elevated Risk."
     },
     {
         "id_input_test_case": 5,
-        "input_test_case_description": "Example of underweight",
+        "input_test_case_description": "Elevated Risk",
         "inputs": [
-            "Lee",
-            "Ranaldo",
-            "5",
-            "10",
-            "110"
+            "Ella",
+            "Brooks",
+            "90000",
+            "3000"
         ],
         "input_prompts": [
             "Enter your first name: ",
             "Enter your last name: ",
-            "Enter the feet of your height: ",
-            "Enter the inches of your height: ",
-            "Enter your weight in pounds: "
+            "Enter your annual income in dollars: ",
+            "Enter your total monthly debt payments in dollars: "
         ],
         "printed_messages": [
-            "Lee Ranaldo has a BMI of 15.78. The associated category is: Underweight."
+            "Ella Brooks has a DTI of 0.40. The associated category is: Elevated Risk."
         ],
         "invalid_input_prompts": [],
         "invalid_printed_messages": [
-            "Kim Gordon has a BMI of 23.29. The associated category is: Normal weight.",
-            "Amit Patel has a BMI of 44.93. The associated category is: Obese.",
-            "Steve Shelley has a BMI of 26.58. The associated category is: Overweight.",
-            "Thurston Moore has a BMI of 25.00. The associated category is: Overweight."
+            "Grace Patel has a DTI of 0.67. The associated category is: High Risk.",
+            "Felix Chen has a DTI of 0.50. The associated category is: High Risk.",
+            "Taylor Nguyen has a DTI of 0.18. The associated category is: Low Risk.",
+            "Chloe Singh has a DTI of 0.35. The associated category is: Moderate Risk.",
+            "Ava Lee has a DTI of 0.20. The associated category is: Moderate Risk.",
+            "Diego Park has a DTI of 0.36. The associated category is: Elevated Risk."
         ],
         "bools": {},
-        "ints": {
-            "height_feet": 5,
-            "height_inches": 10
-        },
+        "ints": {},
         "strings": {
-            "first_name": "Lee",
-            "last_name": "Ranaldo",
-            "category": "Underweight"
+            "first_name": "Ella",
+            "last_name": "Brooks",
+            "category": "Elevated Risk"
         },
         "floats": {
-            "weight_pounds": 110.0,
-            "bmi": 15.781632653061223
+            "annual_income": 90000.0,
+            "monthly_debt": 3000.0,
+            "raw_dti": 0.4,
+            "dti": 0.4
         },
         "lists": {},
         "dicts": {},
-        "example_output": "Enter your first name: Lee\nEnter your last name: Ranaldo\nEnter the feet of your height: 5\nEnter the inches of your height: 10\nEnter your weight in pounds: 110\nLee Ranaldo has a BMI of 15.78. The associated category is: Underweight."
+        "example_output": "Enter your first name: Ella\nEnter your last name: Brooks\nEnter your annual income in dollars: 90000\nEnter your total monthly debt payments in dollars: 3000\nElla Brooks has a DTI of 0.40. The associated category is: Elevated Risk."
+    },
+    {
+        "id_input_test_case": 6,
+        "input_test_case_description": "High Risk at the boundary",
+        "inputs": [
+            "Felix",
+            "Chen",
+            "48000",
+            "2000"
+        ],
+        "input_prompts": [
+            "Enter your first name: ",
+            "Enter your last name: ",
+            "Enter your annual income in dollars: ",
+            "Enter your total monthly debt payments in dollars: "
+        ],
+        "printed_messages": [
+            "Felix Chen has a DTI of 0.50. The associated category is: High Risk."
+        ],
+        "invalid_input_prompts": [],
+        "invalid_printed_messages": [
+            "Grace Patel has a DTI of 0.67. The associated category is: High Risk.",
+            "Taylor Nguyen has a DTI of 0.18. The associated category is: Low Risk.",
+            "Chloe Singh has a DTI of 0.35. The associated category is: Moderate Risk.",
+            "Ella Brooks has a DTI of 0.40. The associated category is: Elevated Risk.",
+            "Ava Lee has a DTI of 0.20. The associated category is: Moderate Risk.",
+            "Diego Park has a DTI of 0.36. The associated category is: Elevated Risk."
+        ],
+        "bools": {},
+        "ints": {},
+        "strings": {
+            "first_name": "Felix",
+            "last_name": "Chen",
+            "category": "High Risk"
+        },
+        "floats": {
+            "annual_income": 48000.0,
+            "monthly_debt": 2000.0,
+            "raw_dti": 0.5,
+            "dti": 0.5
+        },
+        "lists": {},
+        "dicts": {},
+        "example_output": "Enter your first name: Felix\nEnter your last name: Chen\nEnter your annual income in dollars: 48000\nEnter your total monthly debt payments in dollars: 2000\nFelix Chen has a DTI of 0.50. The associated category is: High Risk."
+    },
+    {
+        "id_input_test_case": 7,
+        "input_test_case_description": "Clear high",
+        "inputs": [
+            "Grace",
+            "Patel",
+            "60000",
+            "3350"
+        ],
+        "input_prompts": [
+            "Enter your first name: ",
+            "Enter your last name: ",
+            "Enter your annual income in dollars: ",
+            "Enter your total monthly debt payments in dollars: "
+        ],
+        "printed_messages": [
+            "Grace Patel has a DTI of 0.67. The associated category is: High Risk."
+        ],
+        "invalid_input_prompts": [],
+        "invalid_printed_messages": [
+            "Felix Chen has a DTI of 0.50. The associated category is: High Risk.",
+            "Taylor Nguyen has a DTI of 0.18. The associated category is: Low Risk.",
+            "Chloe Singh has a DTI of 0.35. The associated category is: Moderate Risk.",
+            "Ella Brooks has a DTI of 0.40. The associated category is: Elevated Risk.",
+            "Ava Lee has a DTI of 0.20. The associated category is: Moderate Risk.",
+            "Diego Park has a DTI of 0.36. The associated category is: Elevated Risk."
+        ],
+        "bools": {},
+        "ints": {},
+        "strings": {
+            "first_name": "Grace",
+            "last_name": "Patel",
+            "category": "High Risk"
+        },
+        "floats": {
+            "annual_income": 60000.0,
+            "monthly_debt": 3350.0,
+            "raw_dti": 0.67,
+            "dti": 0.67
+        },
+        "lists": {},
+        "dicts": {},
+        "example_output": "Enter your first name: Grace\nEnter your last name: Patel\nEnter your annual income in dollars: 60000\nEnter your total monthly debt payments in dollars: 3350\nGrace Patel has a DTI of 0.67. The associated category is: High Risk."
     }
 ]

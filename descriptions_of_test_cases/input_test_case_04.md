@@ -1,37 +1,23 @@
 # Test Case 4
 
 ## Description
-Example of normal weight
+Elevated Risk right at the boundary
 
 ## Inputs
+The inputs below (without the quotes) will be entered one by one each time an `input()` function is found in your code.
 ```
-1: "Kim"
-2: "Gordon"
-3: "5"
-4: "5"
-5: "140"
-```
-
-## Expected Input Prompts
-```
-1: "Enter your first name: "
-2: "Enter your last name: "
-3: "Enter the feet of your height: "
-4: "Enter the inches of your height: "
-5: "Enter your weight in pounds: "
+1: "Diego"
+2: "Park"
+3: "50000"
+4: "1500"
 ```
 
-## Expected Printed Messages
+## Example Output
+This is what your terminal should look like if you use the inputs above when running your code.
 ```
-1: "Kim Gordon has a BMI of 23.29. The associated category is: Normal weight."
-```
-
-## Example Output **(combined Inputs, Input Prompts, and Printed Messages)**
-```
-Enter your first name: Kim
-Enter your last name: Gordon
-Enter the feet of your height: 5
-Enter the inches of your height: 5
-Enter your weight in pounds: 140
-Kim Gordon has a BMI of 23.29. The associated category is: Normal weight.
+Enter your first name: Diego
+Enter your last name: Park
+Enter your annual income in dollars: 50000
+Enter your total monthly debt payments in dollars: 1500
+Diego Park has a DTI of 0.36. The associated category is: Elevated Risk.
 ```

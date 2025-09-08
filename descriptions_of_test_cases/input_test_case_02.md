@@ -1,37 +1,23 @@
 # Test Case 2
 
 ## Description
-Example of overweight, right at the category threshold. Also includes a decimal for the weight.
+Moderate Risk, right at the boundary
 
 ## Inputs
+The inputs below (without the quotes) will be entered one by one each time an `input()` function is found in your code.
 ```
-1: "Thurston"
-2: "Moore"
-3: "5"
-4: "8"
-5: "164.44"
-```
-
-## Expected Input Prompts
-```
-1: "Enter your first name: "
-2: "Enter your last name: "
-3: "Enter the feet of your height: "
-4: "Enter the inches of your height: "
-5: "Enter your weight in pounds: "
+1: "Ava"
+2: "Lee"
+3: "60000"
+4: "1000"
 ```
 
-## Expected Printed Messages
+## Example Output
+This is what your terminal should look like if you use the inputs above when running your code.
 ```
-1: "Thurston Moore has a BMI of 25.00. The associated category is: Overweight."
-```
-
-## Example Output **(combined Inputs, Input Prompts, and Printed Messages)**
-```
-Enter your first name: Thurston
-Enter your last name: Moore
-Enter the feet of your height: 5
-Enter the inches of your height: 8
-Enter your weight in pounds: 164.44
-Thurston Moore has a BMI of 25.00. The associated category is: Overweight.
+Enter your first name: Ava
+Enter your last name: Lee
+Enter your annual income in dollars: 60000
+Enter your total monthly debt payments in dollars: 1000
+Ava Lee has a DTI of 0.20. The associated category is: Moderate Risk.
 ```
