@@ -8,7 +8,8 @@ from conftest import (
     get_similarity_feedback,
     clear_database,
     pc_get_or_create,
-    pc_finalize_and_maybe_fail
+    pc_finalize_and_maybe_fail,
+    default_module_to_test
 )
 import re
 
@@ -35,7 +36,7 @@ def test_02_printed_messages(current_test_name, input_test_cases):
             invalid_printed_messages = input_test_case["invalid_printed_messages"]
 
             # Load in the student's code and capture output
-            manager_payload = load_student_code(current_test_name, inputs, input_test_case)
+            manager_payload = load_student_code(current_test_name, inputs, input_test_case, default_module_to_test)
             
             if not manager_payload:
                 continue # if there was an error in running student code, it's already been logged. Just skip to the next test case.
