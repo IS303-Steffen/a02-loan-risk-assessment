@@ -35,7 +35,7 @@ Be sure to include comments in your code. Push your code to your GitHub reposito
 - See `RUBRIC.md` for details on each of the tests you're scored on.
 - To see what score you'll receive, run the tests using the testing tab (it looks like a beaker).
     - In the testing tab, press `Configure Python Tests`, then choose `pytest`, then `tests`, and then press the `Run Tests` button.
-        - If you accidentally choose the wrong options for `Configure Python Tests`, to choose again, go to `View` > `Command Palette` and then type `Python: Configure Tests`. Then choose the options above again.
+        - If you accidentally choose the wrong options for `Configure Python Tests`, to choose again, go to `View` > `Command Palette` and then type `Python: Configure Tests` and hit enter. Then choose the options above again.
 - To see your results and any error messages, right click the `TEST_RESULTS_SUMMARY.md` file and choose `Open Preview`.
 
 ## Example Output
